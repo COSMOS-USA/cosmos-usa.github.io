@@ -1,0 +1,181 @@
+header {
+  background: url(images/header-bg.jpg) no-repeat center bottom;;
+  background-size: cover;
+  border-width: 0px 0px 1px;
+  border-color: white;
+  border-style: ridge;
+}
+.header-set { 
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+}
+.header-text {
+  color: white;
+  font-family: Harlow Solid, cursive;
+  height: 10px;
+  width: auto;
+	font-size: 55px;
+  text-align: center;
+  margin-top: 0.1px;
+  text-shadow: lightblue 0px 3px 3px;
+}
+.header-text2 { 
+  color: white;
+  font-family: Harlow Solid, sans-serif;
+  text-shadow: 2px 2px 1px lightskyblue;
+  font-size: 25px;
+  text-align: center;
+	margin-bottom: 1px;
+  line-height: 60px;
+}
+footer {
+  border-width: 1px 0px 0px;
+  border-color: white;
+  border-style: solid;
+}
+.footer-text { 
+  color: white;
+  font-family: Harlow Solid, cursive;
+  height: 10px;
+  width: auto;
+	font-size: 55px;
+  text-align: center;
+  margin-top: 0.1px;
+  text-shadow: lightblue 0px 3px 3px;
+  margin-top: 10px;
+}
+body {
+	margin:0px;
+	padding:0px;
+	background-attachment: scroll;
+	background-image: url(images/main-bg.jpg);
+  background-position: center;
+	background-repeat: repeat-round;
+  background-size: cover;
+  border-color: white;
+}
+main { 
+  color: white;
+  font-size: 15px;
+}
+.main-settings { 
+  width: 900px;
+  padding: 10px;
+  margin: auto;
+  background-attachment: scroll;
+	background-repeat: repeat-round;
+	background-position: left top;
+  background-size: cover;
+  overflow: auto;
+}
+.main-text { 
+  text-align: center;
+  font-family: "Harlow Solid Regular";
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 3px 0px rgb(33, 121, 255,0.5), 9px 8px 0px rgba(0,0,0,0.15);
+}
+.inside-text { 
+  font-family: Lucida Console;
+  font-size: 17px;
+  text-shadow: 3px 2px 3px rgb(211,33,255,0.5), 9px 8px 0px rgba(0,0,0,0.15);
+}
+.my-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10px;
+  border: 3px solid;
+  box-shadow: 0 0 5px red;
+}
+footer { 
+  background: url(images/header-bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  text-align: center;
+	width: 100%;
+	height: 100px;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+}
+.google-maps { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+  border-radius: 1px;
+  border: 3px solid;
+  box-shadow: 0 0 4px red;
+}
+a:link {
+color:white;
+}
+a:active {
+color:red;
+}
+a:visited {
+color:lightblue;
+}
+a:hover {
+color:lightcoral;
+}
+.audioplayer { 
+  margin-left: 34%;
+  margin-top: 15px;
+}
+.text-color { 
+  background-color: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+  background-image: linear-gradient(
+  45deg,
+  #ff0000 33%,
+  #ff4500 33%,
+  #ff4500 40%,
+  #ffff00 40%,
+  #ffff00 47%,
+  #008000 47%,
+  #008000 54%,
+  #00bfff 54%,
+  #00bfff 61%,
+  #0000ff 61%,
+  #0000ff 68%,
+  #800080 68%,
+  );
+  animation: text-animate-rev .75 ease-in forwards;
+}
+.text-color:hover {
+  animation: text-animate .5s ease-in forwards;
+}
+
+@keyframes text-animate{
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+
+@keyframes text-animate-rev{
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
