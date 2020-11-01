@@ -1,5 +1,5 @@
 header {
-  background: url(images/header-bg.jpg) no-repeat center bottom;;
+  background: url(images/header-bg.jpg) no-repeat center bottom;
   background-size: cover;
   border-width: 0px 0px 1px;
   border-color: white;
@@ -15,7 +15,7 @@ header {
 }
 .header-text {
   color: white;
-  font-family: Harlow Solid, cursive;
+  font-family: 'Harlow Solid', 'Bauhaus 93', 'Bernard MT', cursive;
   height: 10px;
   width: auto;
 	font-size: 55px;
@@ -25,7 +25,7 @@ header {
 }
 .header-text2 { 
   color: white;
-  font-family: Harlow Solid, sans-serif;
+  font-family: 'Harlow Solid', 'Bauhaus 93', 'Bernard MT', sans-serif;
   text-shadow: 2px 2px 1px lightskyblue;
   font-size: 25px;
   text-align: center;
@@ -39,7 +39,7 @@ footer {
 }
 .footer-text { 
   color: white;
-  font-family: Harlow Solid, cursive;
+  font-family: 'Harlow Solid', 'Bauhaus 93', 'Bernard MT';
   height: 10px;
   width: auto;
 	font-size: 55px;
@@ -74,7 +74,7 @@ main {
 }
 .main-text { 
   text-align: center;
-  font-family: "Harlow Solid Regular";
+  font-family: "Harlow Solid Regular", 'Bauhaus 93', 'Bernard MT';
   font-size: 35px;
   font-weight: bold;
   color: white;
@@ -129,53 +129,4 @@ color:lightcoral;
 .audioplayer { 
   margin-left: 34%;
   margin-top: 15px;
-}
-.text-color { 
-  background-color: red;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 100%;
-  background-image: linear-gradient(
-  45deg,
-  #ff0000 33%,
-  #ff4500 33%,
-  #ff4500 40%,
-  #ffff00 40%,
-  #ffff00 47%,
-  #008000 47%,
-  #008000 54%,
-  #00bfff 54%,
-  #00bfff 61%,
-  #0000ff 61%,
-  #0000ff 68%,
-  #800080 68%,
-  );
-  animation: text-animate-rev .75 ease-in forwards;
-}
-.text-color:hover {
-  animation: text-animate .5s ease-in forwards;
-}
-
-@keyframes text-animate{
-  0% {
-    background-size: 100%;
-  }
-  80% {
-    background-size: 650%;
-  }
-  100% {
-    background-size: 650%;
-  }
-}
-
-@keyframes text-animate-rev{
-  0% {
-    background-size: 100%;
-  }
-  80% {
-    background-size: 650%;
-  }
-  100% {
-    background-size: 650%;
-  }
 }

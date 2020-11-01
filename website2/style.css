@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+}
+/* Header */
+
+.header-set { 
+	width: 100%;
+	height: 100px;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+  background: url(images/header-bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  border-width: 0px 0px 3px;
+  border-color: white;
+  border-style: ridge;
+}
+/* Headling */
+
+h3 {
+  color: white;
+  font-family: 'Bauhaus 93', 'Bernard MT';
+  font-size: 35px;
+  line-height: 1px;
+  text-shadow: 3px 2px 3px rgb(211,33,255,0.5), 9px 8px 0px rgba(0,0,0,0.15);
+}
+h2 {
+  color: white;
+  font-family: 'Bauhaus 93', 'Bernard MT';
+  font-size: 25px;
+  text-shadow: 3px 2px 3px rgb(211,33,255,0.5), 9px 8px 0px #EED5D5;
+  margin: 0;
+}
+
+main {
+}
+main p {
+  font-size: 15px;
+  font-family: 'Lato';
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+  background: url(images/header-bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  background: url(images/header-bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer-text { 
+  color: white;
+  font-family: 'Bauhaus 93', 'Bernard MT';
+  height: 10px;
+  width: auto;
+	font-size: 55px;
+  text-align: center;
+  margin-top: 0.1px;
+  text-shadow: lightblue 0px 3px 3px;
+  margin-top: 10px;
+}
+
+/* Group */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  flex: 1;
+  margin: 10px;
+}
+.item-first {
+  margin-right: 333px;
+  padding: 120px;
+}
+.item-double {
+  flex: 2;
+  margin: 7px 7px 7px 0px;
+  padding: 70px;
+  margin-left: 1px;
+}
+.item-footer {
+  margin-right: 330px;
+}
+img {
+  border-radius: 10px;
+  border: 3px;
+  border-color: white;
+}
+.h-left {
+  text-align: left;
+  margin-left: 177px;
+}
+.h-right {
+  text-align: right;
+  margin-right: 555px;
+}
+.my-photo {
+  border-radius: 10px;
+  border: 3px;
+  border-color: white;
+}
+.portfolio-h {
+  text-align: center;
+  font-size: 35px;
+}
+.item-footer {
+  margin-right: 344px;
+}
+
+@media all and (min-width: 800px) {
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Articles */
+
+#home {
+  background: url(images/blocks/bg1.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  border-width: 0px 0px 3px;
+  border-color: white;
+  border-style: ridge;
+}
+#about {
+  background: url(images/blocks/bg1.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  border-width: 0px 0px 3px;
+  border-color: white;
+  border-style: ridge;
+}
+#portfolio {
+  background: url(images/blocks/bg2.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  border-width: 0px 0px 5px;
+  border-color: white;
+  border-style: ridge;
+}
+#contact {
+  background: url(images/blocks/bg2.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  border-width: 0px 0px 1px;
+  border-color: white;
+  border-style: ridge;
+}
+
+/* Links */
+
+a {
+  font-family: "Century Gothic";
+  text-decoration: none;
+}
+a:link {
+color: white;
+text-shadow: 4px 3px 4px #A30089;
+}
+a:active {
+color:red;
+text-shadow: 4px 3px 4px #A30089;
+}
+a:visited {
+color:white;
+text-shadow: 4px 3px 4px #A30089;
+}
+a:hover {
+color:lightcoral;
+text-shadow: 4px 3px 4px #A30089;
+}
