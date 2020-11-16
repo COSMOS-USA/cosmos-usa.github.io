@@ -84,6 +84,7 @@ main {
   font-family: Lucida Console;
   font-size: 17px;
   text-shadow: 3px 2px 3px rgb(211,33,255,0.5), 9px 8px 0px rgba(0,0,0,0.15);
+  background: gray transparent;
 }
 .my-photo {
   display: block;
