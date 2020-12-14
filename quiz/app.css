@@ -1,0 +1,42 @@
+body {
+  background-color: #1D2021;
+  color: #ff9100;
+  background-image: url(images/main-bg.jpg);
+}
+
+.welcome, .quiz-interface, .answer-response, .quiz-results {
+  margin: 20px;
+  padding: 26px;
+  border: 2px solid gold;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(images/main-bg.jpg);
+}
+
+h1 {
+  margin-left: 21px;
+  text-align: center;
+	font-family: 'Agency FB';
+}
+
+p {
+  font-size:26px;
+}
+
+ol li {
+  margin: 8px;
+  font-size: 24px;
+}
+
+input[type='radio'] {transform: scale(1.4)}
+
+
+.quiz-results {
+	text-align: center;
+}
+
+.submit-answer, #beginQuiz, .restart-quiz {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
