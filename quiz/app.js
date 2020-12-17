@@ -108,8 +108,6 @@ function generateWelcomeString() {
     `;
 }
 function generateQuizInterfaceString(questionObject) {
-  // console.log(questionObject);
-  // console.log(questionObject.question.answers);
   return `
     <div class='quiz-interface'>
       <p>Question ${questionObject.index} out of ${store.questions.length}</p>
@@ -127,7 +125,6 @@ function generateQuizInterfaceString(questionObject) {
     </div>
     `;
 }
-
 
 function generateAnswerResults(){
   let answerArray = store.currentQuestionState.answerArray;
@@ -153,7 +150,6 @@ function generateAnswerResults(){
     </div>
   `;
 }
-
 
 function generateQuizAnswers(answers){
   let answerArray = [];
@@ -202,8 +198,6 @@ function generateImage(quizResults) {
 
  }
 
-/********** RENDER FUNCTION(S) **********/
-
 function renderQuiz () {
 
   if(store.quizStarted === false) {
@@ -226,14 +220,11 @@ function renderQuiz () {
   } 
 }
 
-
-// Changes the state of the application to a quizStarted = true
 function startQuiz() {
   console.log('quiz has begun');
   store.quizStarted = true;
 }
 
-// currentQuestion
 function currentQuestion(){
   let index = store.questionNumber;
   let questionObject = store.questions[index];
@@ -243,8 +234,6 @@ function currentQuestion(){
   };
 }
 
-// Go to the next question of the quiz
-// Model function changes state
 function nextQuestion(){
   if (store.questionNumber < store.questions.length){
     store.questionNumber++;
@@ -267,7 +256,7 @@ function validateCorrectAnswer() {
     return;
   } else {
     store.submittingAnswer = true;
-    if(selectedAnswer === correctAnswer){
+    if(selectedAnswer.toString() === correctAnswer.toString()){
       store.score += 10;
       store.currentQuestionState.answerArray = [true, correctAnswer, selectedAnswer];
     } else {
@@ -287,10 +276,6 @@ function restartQuiz() {
   store.submittingAnswer = false;
   store.currentQuestionState.answerArray = [];
 }
-
-/********** EVENT HANDLER FUNCTIONS **********/
-// These functions handle events (submit, click, etc)
-// Controller layer
 
 function handleBeginQuizSubmit(){
   
@@ -333,7 +318,6 @@ function handleRestartQuizSubmit(){
     renderQuiz();
   });
 }
-
 
 // This function will launch all other functions after the page is loaded
 function handleQuiz (){
