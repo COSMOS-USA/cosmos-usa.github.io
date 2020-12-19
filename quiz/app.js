@@ -187,7 +187,6 @@ function generateQuizResultsString(){
           <p>You scored ${store.score} out of ${store.questions.length * 10}</p>            
         <button class="restart-quiz">Restart Quiz</button>      
     </div>   
-   ${generateImage()}  
 `;
         }
 
@@ -275,6 +274,7 @@ function restartQuiz() {
   store.questionNumber = 0;
   store.submittingAnswer = false;
   store.currentQuestionState.answerArray = [];
+  store.score = 0;
 }
 
 function handleBeginQuizSubmit(){
