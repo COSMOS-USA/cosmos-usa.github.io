@@ -43,7 +43,7 @@ function getDogImage(breed) {
 }
 
 function resultScreen() {
-return `<h3>Look at these beautiful dog!</h3>
+return `<h3>Look at this beautiful dog!</h3>
   <div class="results"> 
    <section class="results">
      <h2>Look at this dog!</h2>
